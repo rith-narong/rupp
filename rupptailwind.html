@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUPP</title>
+  <link rel="shortcut icon" href="img/rupp_logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="text-xl font-bold text-blue-600">Royal University of Phnom Penh</a>
+          </div>
+          <!-- Navigation Links -->
+          <nav class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+            <a href="RUPP.html" class="text-blue-600 hover:text-blue-600">bootstrap</a>
+          </nav>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-blue-600">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-gray-100">
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Home</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">About</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Contact</a>
+      </div>
+    </header>
+  
+    <script>
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+
+  <!-- Hero Section -->
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+      <h2 class="text-4xl font-bold text-blue-800 mb-4">About RUPP</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        The Royal University of Phnom Penh (RUPP) is Cambodia’s oldest and largest university. It hosts more than 12000 scholarship and full-fee paying students, across a diverse range of undergraduate and postgraduate programs. It is unique in Cambodia for offering specialist degrees in fields including the sciences, humanities and social sciences, as well as vocational courses in fields such as information technology, electronics, psychology and tourism. RUPP also provides Cambodia’s foremost degree-level language programs through the Institute of Foreign Languages. Due to its many achievements, RUPP is the first university in Cambodia with full membership of the ASEAN University Network (AUN).
+      </p>
+    </div>
+  </section>
+
+  <!-- History Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">History</h3>
+      <p class="text-gray-600 max-w-3xl mx-auto text-center">
+        The Royal University of Phnom Penh first opened its doors as the Royal Khmer University on January 13, 1960, with a National Institute of Judicial and Economic Studies, a Royal School of Medicine, a National School of Commerce, a National Pedagogical Institute, a Faculty of Letters and Human Sciences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Mission</h3>
+        <p class="text-gray-600">
+            The three-fold mission of the Program is to
+
+            Provide high-quality teaching and learning opportunities to prepare professionals for leadership in a wide variety of educational careers;
+            
+            Engage in scholarly research and prepare scholars who can conduct academic research that addresses critical national and regional educational issues; and
+            
+            Provide valuable service to the field through collaboration with other educational agencies, institutions, and scholars to contribute to the improvement of the education system in Cambodia and the region.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Vision</h3>
+        <p class="text-gray-600">
+            The Program will be the leading institute in Cambodia committed to the teaching and learning of current knowledge and the development of new knowledge and skills for current and future educators and educational leaders. This will be done through the provision of high quality academic education programs of study, engagement in research and involvement in service. These activities will contribute to the ongoing development of a theoretically informed and more equitable educational system in the country and in the broader region.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Profiles -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Professor</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center bg-white p-6 rounded-lg shadow-md">
+          <img src="img/unnamed.png" alt="Leader 1" class="mx-auto mb-4 rounded-full h-24 w-24">
+          <h4 class="text-xl font-bold text-blue-800">Mr.Heng Sovannarith</h4>
+          <p class="text-gray-600">President</p>
+        </div>
+        <div class="text-center bg-white p-6 rounded-lg shadow-md">
+          <img src="img/pokleakmony.jpg" alt="Leader 2" class="mx-auto mb-4 rounded-full h-24 w-24">
+          <h4 class="text-xl font-bold text-blue-800">Mr.Leakmony Pok</h4>
+          <p class="text-gray-600">Provost</p>
+        </div>
+        <div class="text-center bg-white p-6 rounded-lg shadow-md">
+          <img src="img/limlyheng.jpg" alt="Leader 3" class="mx-auto mb-4 rounded-full h-24 w-24">
+          <h4 class="text-xl font-bold text-blue-800">Mr.Lim Lyheng</h4>
+          <p class="text-gray-600">Dean of Research</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Highlights -->
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Highlights</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="img/slider02.jpg" alt="Campus 1" class="rounded-lg shadow-md">
+        <img src="img/slider3.jpg" alt="Campus 2" class="rounded-lg shadow-md">
+        <img src="img/commnunity_event.jpg" alt="Campus 3" class="rounded-lg shadow-md">
+        <img src="img/slideshow01.jpg" alt="Campus 4" class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-200">&copy; Royal University of Phnom Penh.</p>
+      <p class="text-gray-200">123 University Lane, Phnom Penh, State, 12345 | Phone: (123) 456-7890</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
